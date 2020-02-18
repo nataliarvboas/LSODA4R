@@ -2,8 +2,8 @@ setwd("~/Desktop/LSODAForRLib/build")
 library(Rcpp)
 dyn.load("libLSODA4R.so")
 
-step_solver <- function(ode, t, dt, y, rtol = 1e-5, atol = 1e-6) {
-  .Call("Lsoda", as.double(t), as.double(dt), as.double(y), as.double(rtol), as.double(atol), environment())
+step_solver <- function(ode, t0, tf, y, rtol = 1e-5, atol = 1e-6) {
+  .Call("Lsoda", as.double(t0), as.double(tf), as.double(y), as.double(rtol), as.double(atol), environment())
 }
 
 
