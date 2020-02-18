@@ -5,7 +5,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -fPIC -std=c++11 -O3")
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR})
 find_package(R MODULE)
 include_directories(${R_INCLUDE_DIR})
-include_directories(/home/nataliarvboas/R/x86_64-pc-linux-gnu-library/3.6/Rcpp/include)
+include_directories(~/R/x86_64-pc-linux-gnu-library/3.6/Rcpp/include)
 
 find_library(LIB_TO_LINK NAMES)
 if(LIB_TO_LINK)
