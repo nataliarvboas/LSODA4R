@@ -1,4 +1,4 @@
-setwd("~/Desktop/LSODAForRLib/build")
+setwd("~/Desktop/Embrapa/Metodos/LSODA4R/build")
 library(Rcpp)
 dyn.load("libLSODA4R.so")
 

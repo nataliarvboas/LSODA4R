@@ -23,7 +23,6 @@ void sys(double t, double *y, double *dydt) {
   }
 }
 
-
 extern "C" {
 	SEXP Lsoda(SEXP t0_S, SEXP tf_S, SEXP y_S, SEXP rtol_S, SEXP atol_S, SEXP env) {
 	  ENV = as<Environment>(env);
